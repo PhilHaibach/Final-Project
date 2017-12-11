@@ -1,13 +1,19 @@
-﻿@media screen and (min-width: 320px)
+﻿/*
+======================================
+    standard screen size
+======================================
+*/
+
+@media screen and (min-width: 321px) 
 {
-    .home
+    body 
     {
-        width: 520px;
         font-family: Calibri;
         font-size: 12px;
+        width: 520px;
     }
 
-    .home h1
+    header h1 
     {
         font-family: Cambria;
         font-size: 16px;
@@ -15,46 +21,542 @@
         text-align: left;
     }
 
-    .home p
+    header p 
     {
         font-family: Calibri;
         font-size: 12px;
         font-style: italic;
         text-align: left;
+        margin-left: 10px;
     }
 
-    .home .mainContent
+    .separater 
+    {
+        border: 1.2px solid teal;
+        margin: 20px;
+    }
+
+    footer 
+    {
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    /*
+--------------------------------------
+    login page
+--------------------------------------
+*/
+
+    .loginPage 
     {
         border: 1px solid black;
+        border-radius: 20px;
     }
 
-    .home .mainContentTop
+    .loginPage .loginPageTop 
     {
-        -webkit-column-count: 2;
-        -webkit-column-gap: 20px;
-        column-count: 2;
-        column-gap: 20px;
+        display: inline-block;
     }
 
-    .home label
+    .loginPage .topText 
     {
-        
+        width: 180px;
+        float: left;
+        margin-top: 40px;
+        margin-left: 19px;
+    }
+
+    .loginPage .mobileTopText 
+    {
+        display: none;
+    }
+
+    .loginPage .topInfo
+    {
+        float: right;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    .loginPage .loginPageBottom 
+    {
+        display: inline-block;
+    }
+
+    .loginPage .bottomText 
+    {
+        width: 180px;
+        float: left;
+        margin-top: 80px;
+        margin-left: 19px;
+    }
+
+    .loginPage .mobileBottomText 
+    {
+        display: none;
+    }
+
+    .loginPage .bottomInfo 
+    {
+        float: right;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    .loginPage label 
+    {
+        float: left;
         width: 10em;
         text-align: right;
-    }
-    .home input
-    {
-        margin-left: 1em;
-        margin-bottom: 1em;
-    }
-    .home .LoginButton
-    {
-        margin-left: 10em;
+        margin-top: 10px;
     }
 
-    .home .separater
+    .loginPage input 
     {
-        border: 1px solid blue;
-        margin: 20px;
+        margin-left: 1em;
+        margin-top: 10px;
+    }
+
+    .loginPage .LoginButton 
+    {
+        margin-left: 10em;
+        width: 160px;
+        height: 25px;
+        border-radius: 10px;
+        border-color: aqua;
+        background-color: teal;
+        color: white;
+    }
+
+    .loginPage .CreateAccountButton 
+    {
+        margin-left: 10em;
+        width: 160px;
+        height: 25px;
+        border-radius: 10px;
+        border-color: aqua;
+        background-color: teal;
+        color: white;
+    }
+
+    .loginPage .usernameErrorLogin
+    {
+        text-align: right;
+        margin-bottom: 5px;
+        height: 15px;
+        color: red;        
+    }
+    .loginPage .passwordErrorLogin
+    {
+        text-align: right;
+        margin-bottom: 5px;
+        height: 15px;
+        color: red;
+    }
+    .loginPage .usernameErrorCreate
+    {
+        text-align: right;
+        margin-bottom: 5px;
+        height: 15px;
+        color: red;
+    }
+    .loginPage .passwordErrorCreate
+    {
+        text-align: right;
+        margin-bottom: 5px;
+        height: 15px;
+        color: red;
+    }
+    .loginPage .emailError
+    {
+        text-align: right;
+        margin-bottom: 5px;
+        height: 15px;
+        color: red;
+    }
+    .loginPage .repeatEmailError
+    {
+        text-align: right;
+        margin-bottom: 5px;
+        height: 15px;
+        color: red;
+    }
+
+    /*
+--------------------------------------
+    Account info page
+--------------------------------------
+*/
+
+    .infoPage 
+    {
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+    .infoPage .accountInfoHeading
+    {
+        font-size: 16px;
+        margin-left: 70px;
+        margin-top: 20px;
+    }
+
+    .infoPage .infoPageTop 
+    {
+        border: 1px solid black;
+        width: 400px;
+        margin-left: 60px;
+        margin-bottom: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .infoPage .displayLabel
+    {
+        display: inline-block;
+        width: 80px;
+        text-align: right;
+        padding-right: 20px;
+        margin-bottom: 10px;
+    }
+    .infoPage .displayField
+    {
+        display: inline-block;
+        width: 200px;
+    }
+    .infoPage .updateButton
+    {
+        border-radius: 10px;
+        border-color: aqua;
+        background-color: teal;
+        color: white;
+        width: 60px;
+        height: 25px;
+        margin-left: 20px;
+    }
+    .infoPage #label0
+    {
+        font-weight: bold;
+    }
+
+    .infoPageBottom
+    {
+        margin: 30px;
+        margin-left: 80px;
+    }
+    .infoPage .infoPageBottom label 
+    {
+        float: left;
+        width: 10em;
+        text-align: right;
+        margin-top: 10px;
+    }
+
+    .infoPage .infoPageBottom input 
+    {
+        margin-left: 1em;
+        margin-top: 10px;
+    }
+    .infoPage .addInfoButton
+    {
+        margin-left: 100px;
+        width: 80px;
+        height: 25px;
+        border-radius: 10px;
+        border-color: aqua;
+        background-color: teal;
+        color: white;
+    }
+
+    .infoPage .addNameError
+    {
+        text-align: right;
+        margin-right: 120px;
+        height: 15px;
+        color: red;
+    }
+    .infoPage .addValueError
+    {
+        text-align: right;
+        margin-bottom: 10px;
+        margin-right: 120px;
+        height: 15px;
+        color: red;
+    }
+}
+
+/*
+======================================
+    mobile screen size
+======================================
+*/
+
+@media screen and (max-width: 320px)
+{
+    body
+    {
+        font-family: Calibri;
+        font-size: 12px;
+        width: 300px;
+    }
+
+    header h1
+    {
+        font-family: Cambria;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    header p
+    {
+        font-family: Calibri;
+        font-size: 12px;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .separater
+    {
+        border: 1.2px solid teal;
+        margin: 10px;
+    }
+
+    footer
+    {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+/*
+--------------------------------------
+    login page
+--------------------------------------
+*/
+
+    .loginPage
+    {
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+
+    .loginPage .loginPageTop
+    {
+        display: inline-block;
+    }
+    .loginPage .topText
+    {
+        display: none;
+    }
+    .loginPage .mobileTopText
+    {
+        font-family: Cambria;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .loginPage .topInfo
+    {
+        margin: 10px;
+    }
+    .loginPage .loginPageBottom
+    {
+        display: inline-block;
+    }
+    .loginPage .bottomText
+    {
+        display: none;
+    }
+    .loginPage .mobileBottomText
+    {
+        font-family: Cambria;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .loginPage .bottomInfo
+    {
+        margin: 10px;
+    }
+
+    .loginPage label
+    { 
+        float: left;
+        width: 8em;
+        text-align: right;
+        margin-top: 10px;
+    }
+    .loginPage input
+    {
+        margin-left: 1em;
+        margin-top: 10px;
+    }
+    .loginPage .LoginButton
+    {
+        height: 40px;
+        width: 240px;
+        margin-left: 19px;
+        border-radius: 10px;
+        border-color: aqua;
+        background-color: teal;
+        color: white;
+    }
+    .loginPage .CreateAccountButton
+    {
+        height: 40px;
+        width: 240px;
+        margin-left: 19px;
+        border-radius: 10px;
+        border-color: aqua;
+        background-color: teal;
+        color: white;
+    }
+
+    .loginPage .usernameErrorLogin
+    {
+        text-align: right;
+        margin-bottom: 5px;
+        height: 15px;
+        color: red;        
+    }
+    .loginPage .passwordErrorLogin
+    {
+        text-align: right;
+        margin-bottom: 5px;
+        height: 15px;
+        color: red;
+    }
+    .loginPage .usernameErrorCreate
+    {
+        text-align: right;
+        margin-bottom: 5px;
+        height: 15px;
+        color: red;
+    }
+    .loginPage .passwordErrorCreate
+    {
+        text-align: right;
+        margin-bottom: 5px;
+        height: 15px;
+        color: red;
+    }
+    .loginPage .emailError
+    {
+        text-align: right;
+        margin-bottom: 5px;
+        height: 15px;
+        color: red;
+    }
+    .loginPage .repeatEmailError
+    {
+        text-align: right;
+        margin-bottom: 5px;
+        height: 15px;
+        color: red;
+    }
+/*
+--------------------------------------
+    Account info page
+--------------------------------------
+*/ 
+
+    .infoPage
+    {
+        font-family: Cambria;
+        font-size: 16px;
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+    .infoPage .accountInfoHeading
+    {
+        font-size: 20px;
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+    .infoPage .infoPageTop 
+    {
+        margin: 30px;
+    }
+
+    .infoPage .displayLabel
+    {
+        display: inline-block;
+        width: 200px;
+        text-align: left;
+        padding-right: 20px;
+        margin-top: 10px;
+    }
+    .infoPage .displayField
+    {
+        display: inline-block;
+        width: 222px;
+        margin-top: 5px;
+    }
+    .infoPage #label0
+    {
+        font-weight: bold;
+    }
+    .infoPage #textField0
+    {
+        margin-bottom: 15px;
+    }
+    .infoPage .updateButton
+    {
+        height: 40px;
+        width: 220px;         
+        border-radius: 10px;
+        border-color: aqua;
+        background-color: teal;
+        color: white;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .infoPageBottom
+    {
+        text-align: left;
+        margin: 30px;
+    }
+    .infoPage .infoPageBottom label 
+    {
+        margin-top: 10px;
+    }
+    .infoPage .infoPageBottom input 
+    {
+        margin-top: 2px;
+        width: 220px;
+    }
+    .infoPage .addInfoButton
+    {
+        height: 40px;
+        border-radius: 10px;
+        border-color: aqua;
+        background-color: teal;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .infoPage .addNameError
+    {
+        font-size: 12px;
+        text-align: right;
+        margin-bottom: 5px;
+        margin-right: 20px;
+        height: 15px;
+        color: red;
+    }
+    .infoPage .addValueError
+    {
+        font-size: 12px;
+        text-align: right;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        height: 15px;
+        color: red;
     }
 }

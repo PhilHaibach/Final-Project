@@ -172,7 +172,7 @@ namespace FinalProject.Controllers
 
             string passwordOnAccount = getAccountValue(model.Username, "password").ToLower();
 
-            if (!model.Password.ToLower().Equals(passwordOnAccount))
+            if (string.IsNullOrEmpty(model.Password) || !model.Password.ToLower().Equals(passwordOnAccount))
             {
                 return new JsonResult().SerializeObject(new
                 {
